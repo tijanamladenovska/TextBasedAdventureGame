@@ -2,11 +2,11 @@
 Multi-Player Text Adventure Game that provides players with a dynamic world filled with exploration, puzzles, and character interactions. The game is designed to support multiple players who should be able to collaborate or compete as they navigate through various interconnected rooms.
 
 **Key features of the implementation include:**
-    --> Structured Game World that consists of multiple rooms, each with unique descriptions, items, and puzzles, allowing for rich exploration.
-    --> Player Interaction allowing players to perform actions such as exploring rooms, picking up items, and interacting with NPCs through a command-line interface.
-    --> Game Logic implemented via rules for player interactions, item management, and progression, with clear objectives tracked through a win condition system.
-    --> Networking Support that allows players to connect to a shared game session, enabling real-time interactions and collaboration.
-    --> Design Patterns implementated further allowing utilization of key software design patterns, including Singleton, Observer, and Factory patterns, which help enhance modularity and maintainability.
+- Structured Game World that consists of multiple rooms, each with unique descriptions, items, and puzzles, allowing for rich exploration.
+- Player Interaction allowing players to perform actions such as exploring rooms, picking up items, and interacting with NPCs through a command-line interface.
+- Game Logic implemented via rules for player interactions, item management, and progression, with clear objectives tracked through a win condition system.
+- Networking Support that allows players to connect to a shared game session, enabling real-time interactions and collaboration.
+- Design Patterns implementated further allowing utilization of key software design patterns, including Singleton, Observer, and Factory patterns, which help enhance modularity and maintainability.
 
 **Introduction:**
 You’re just ordinary twins in a quiet 2025 suburban apartment until you fall through a portal into a future where time has collapsed. Ancient myths, future tech, and forgotten eras that coexist in one chaotic world.
@@ -28,9 +28,9 @@ The GameServer and GameClient classes allow players to connect to a shared game 
 -- attempted, not sure if it works
 
 **Software Patterns:**
-    --> The Singleton pattern used in the GameState class to ensure consistent access to the global game state.
-    --> The Observer pattern implemented in the Chapter class to notify players of changes in the game state, such as chapter completion.
-    --> The Factory pattern utilized in the RoomFactory and ItemFactory classes to create game objects based on predefined templates.
+- The Singleton pattern used in the GameState class to ensure consistent access to the global game state.
+- The Observer pattern implemented in the Chapter class to notify players of changes in the game state, such as chapter completion.
+- The Factory pattern utilized in the RoomFactory and ItemFactory classes to create game objects based on predefined templates.
 
 **Additional Requirements:**
 A command-line interface is implemented for player interaction, allowing players to input commands and receive feedback.
@@ -195,15 +195,15 @@ class WinCondition {
 }
 
 **Assumptions:**
-    --> The game is structured in chapters that represent different parts of the story.
-    --> Players progress through these chapters in by solving puzzles in order to complete teh game.
-    --> Transitions between chapters are managed through observer notifications.
-    --> Players choices can affect the narrative and gameplay by selecting options during dialogues and interactions.
-    --> Players will engage with the environment by examining items, talking to NPCs, and solving puzzles.
-    --> Puzzles are designed to challenge players' problem-solving skills, with varying levels of difficulty.
-    --> Players will understand the mechanics of each puzzle and how to interact with them.
-    --> Players can collect and use items that affect their health and stamina which is used throughout the game.
-    --> Players will manage their inventory effectively, using items strategically to progress.
-    --> Players will form connections with main characters in the game and note their fates.
-    --> Players will follow prompts and instructions provided in the text to navigate and make choices.
-    --> The game encourages replayability via multiple progression paths and assumes players will explore different choices to reach different endings.
+- The game is structured in chapters that represent different parts of the story.
+- Players progress through these chapters in by solving puzzles in order to complete teh game.
+- Transitions between chapters are managed through observer notifications.
+- Players choices can affect the narrative and gameplay by selecting options during dialogues and interactions.
+- Players will engage with the environment by examining items, talking to NPCs, and solving puzzles.
+- Puzzles are designed to challenge players' problem-solving skills, with varying levels of difficulty.
+- Players will understand the mechanics of each puzzle and how to interact with them.
+- Players can collect and use items that affect their health and stamina which is used throughout the game.
+- Players will manage their inventory effectively, using items strategically to progress.
+- Players will form connections with main characters in the game and note their fates.
+- Players will follow prompts and instructions provided in the text to navigate and make choices.
+- The game encourages replayability via multiple progression paths and assumes players will explore different choices to reach different endings.
